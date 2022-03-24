@@ -1,0 +1,24 @@
+feature_id,Hevo,Informatica IICS,SnapLogic,Skyvia,Stitch,Talend,Qlik Replicate,Alteryx,StreamSets,Upsolver,Dataiku,AWS Glue,DOMO,Matillion ETL,HVR,Rivery,Striim,DBT
+Support native Salesforce Source connector,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0
+Support native Workday Source connector,0,1,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0
+Support native Dynamo Source connector,1,1,0,0,1,1,0,0,0,0,0,1,1,1,0,0,0,0
+Support native S3 Source connector,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0
+Support native Azure BLOB Source connector,0,1,0,0,0,1,0,0,1,1,1,1,1,1,1,1,0,0
+Support native Dropbox Source connector,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+Support native Dynamics 365 Source connector,0,1,1,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+Support native FTP Source connector,1,1,1,1,1,1,0,1,1,0,1,0,1,1,1,1,0,0
+Support native Google Analytics Source connector,1,1,1,1,1,0,0,1,0,0,0,0,1,1,0,1,0,0
+Support native HubSpot Source connector,1,1,1,1,1,0,0,0,0,0,0,1,1,1,0,1,0,0
+Support native Jira Source connector,1,1,1,1,1,0,0,0,0,0,0,1,1,1,0,1,0,0
+Support native Zendesk Source connector,1,1,1,1,1,0,0,0,0,0,0,0,1,1,0,1,0,0
+Support native Redshift Source connector,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,0,1
+Support native Magento Source connector,1,0,1,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+Support native Heap Source connector,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Support native Marketo Source connector,1,1,1,1,1,0,0,1,0,0,0,0,1,1,0,1,0,0
+Support native RDS Database Source connector,1,1,0,0,1,1,1,0,0,0,0,1,0,0,0,0,1,0
+Support native SAP Source connector,0,1,0,0,0,0,1,1,1,0,1,1,1,1,0,1,0,0
+Support native Kafka Source connector,1,1,0,0,0,0,0,0,1,1,1,1,1,0,1,0,1,0
+Support native Kinesis Source connector,0,1,0,0,0,0,0,0,1,1,0,1,1,0,0,0,0,0
+Support native Rest API connector,1,1,1,0,1,0,0,1,1,0,1,0,1,1,0,1,0,0
+"API Integration OR Custom Connectors (Ability to connect 
+to a new source which is not available OOB)",1,1,1,1,0,0,1,1,1,0,1,1,0,1,0,1,0,1

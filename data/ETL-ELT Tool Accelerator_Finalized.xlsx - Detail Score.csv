@@ -1,0 +1,194 @@
+Platform Features,Follow up Question,Description,Fivetran,Hevo,Informatica IICS,SnapLogic,Skyvia,Stitch,Talend,Qlik Replicate,Alteryx,Workato,StreamSets,Upsolver,Dataiku,AWS Glue,DOMO,Fivetran,Matillion ETL,Apache Airflow,Airbyte,Hevo Data,HVR,Azure Data Factory,Rivery,Striim,DBT
+Version,,,,,,,,NA,8.0.1,NA,2021.3,,,,,,,,,,,,,,,,
+Support native Salesforce Source connector,,,,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,,Yes,No,No,Yes,Yes,,yes,,,,yes,,yes,yes,No
+Support native Workday Source connector,,,,no,Yes,No,No,Yes,Yes,No,No,,No,No,No,No,Yes,,no,,,,no,,no,no,No
+Support native Dynamo Source connector,,,,Yes,Yes,No,No,Yes,Yes,No,No,,No,No,No,Yes,Yes,,yes,,,,no,,no,no,No
+Support native S3 Source connector,,,,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,,Yes,Yes,Yes,yes,Yes,,yes,,,,,,yes,yes,No
+Support native Azure BLOB Source connector,,,,no,Yes,No,No,No,Yes,No,No,,Yes,Yes,Yes,Yes,Yes,,yes,,,,yes,,yes,no,No
+Support native Dropbox Source connector,,,,no,No,Yes,Yes,No,No,No,No,,No,No,No,No,Yes,,yes,,,,no,,no,no,No
+Support native Dynamics 365 Source connector,,,,no,Yes,Yes,Yes,No,Yes,No,No,,No,No,No,No,No,,yes,,,,no,,no,no,No
+Support native FTP Source connector,,,,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,,Yes,No,Yes,No,Yes (SFTP),,yes,,,,yes,,yes,no,No
+Support native Google Analytics Source connector,,,,Yes,Yes,Yes,Yes,Yes,No,No,Yes,,No,No,No,No,Yes,,yes,,,,no,,yes,no,No
+Support native HubSpot Source connector,,,,Yes,yes (Infometry HubSpot Connector - 3rd Party),Yes,Yes,Yes,No,No,No,,No,No,No,Yes,Yes,,yes,,,,no,,yes,no,No
+Support native Jira Source connector,,,,yes (jira cloud),Yes,Yes,Yes,Yes,No,No,No,,No,No,No,Yes,Yes,,yes,,,,no,,yes,no,No
+Support native Zendesk Source connector,,,,Yes,Yes,Yes,Yes,Yes,No,No,No,,No,No,No,No,Yes,,yes,,,,no,,yes,no,No
+Support native Redshift Source connector,,,,Yes,Yes,Yes,Yes,No,Yes,No,Yes,,Yes,Yes,Yes,Yes,Yes,,yes,,,,yes,,yes,no,Yes
+Support native Magento Source connector,,,,Yes,No,Yes,Yes,Yes,No,No,No,,No,No,No,No,No,,yes,,,,no,,no,no,No
+,,,,magento via mysql,,,,,,,,,,,,,,,,,,,,,,,
+Support native Heap Source connector,,,,no,No,No,No,Yes,No,No,No,,No,No,No,No,No,,no,,,,no,,no,no,No
+Support native Marketo Source connector,,,,yes,Yes,Yes,Yes,Yes,No,No,Yes,,No,No,No,No,Yes,,yes,,,,no,,yes,no,No
+Support native RDS Database Source connector,,,,yes,Yes,No,No,Yes,Yes,Yes,No,,No,No,No,Yes,No,,no,,,,no,,no,yes,No
+Support native SAP Source connector,,,,no,Yes,No,No,No,No,Yes,"Yes, HANA",,Yes,No,Yes,Yes,Yes,,yes,,,,no,,yes,no,No
+Support native Kafka Source connector,,,,yes,Yes,No,No,No,No,No,No,,Yes,Yes,Yes (Kafka cluster is required),Yes,Yes,,no,,,,yes,,no,yes,No
+Support native Kinesis Source connector,,,,no,Yes,No,No,No,No,,No,,Yes,Yes,No,Yes,Yes,,no,,,,no,,no,no,No
+Support native Rest API connector,,,,yes,Yes,Yes,No,Yes,,,Yes,,Yes,No,Yes,No,Yes,,yes,,,,no,,yes,no,No
+"API Integration OR Custom Connectors (Ability to connect 
+to a new source which is not available OOB)",,The ability to access third-party APIs using general purpose HTTP connector.,,Yes,Yes,Yes,Yes,,No,Yes,Yes,,Yes,No,Yes,Yes,,,yes,,,,no,,yes,no,Yes
+Description,,,,api link,create custom api in API Manager,openAPI snap ,No,"Using import api for stitch with clients provided by stitch in Java, python and Clojure",,Qlik Enterprise Manager is needed for Rest APIs to work as it provides with authentication,,,Via http client,,"Python Api, HTTP rest API",Developers can write custom Scala or Python code and import custom libraries and Jar files into Glue ETL jobs to access data sources not natively supported by AWS Glue.,,,,,,,,,,,New adapters can be built using python connectors
+,has dependency on cloud service to trigger custom connector,,,,,,,,,,,,,,,,,,,,,,,,,,
+Supports Variables/Parameters - dynamic pipelines,,Example: ETL tools like Rivery/Matillion provides parameter driven pipelines,,No,Yes,Yes,Yes,No,Yes,Yes,,,Yes,No,Yes,Yes,,,yes,,,,,,,no,Yes
+OOB packages/kits (ready pipelines for common sources),,Refer Kit concept in Rivery,,No,Yes,Yes,No,Yes,Yes,,Yes,,Yes,No,No,No,,,no,,,,no,,yes,yes,no
+,,,,,,"S3 to SnowFlake,  
+Mysql to snowflake.
+ oracleDb to Snowflake",,,,,,,Has sample data pipelines,,,,,,,,,,,,,,
+Support full load,,,,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,,Yes,No,Yes,Yes,,,yes,,,,yes,,yes,yes,no
+Native support for incremental load (delta load/CDC support),,"The ability to read new database transactions from source database logs, capture changes without making application-level changes or scan transactional tables.",,,,No,Yes,,Yes,Yes,Yes,,Yes,Yes,No,Yes,,,no,,,,yes,,yes,yes,no
+,requires CDC configuration at source,,,Yes,Yes,"NA 
+refer snaplogic fast data loader",Yes,,,,Yes,,Yes,Yes,-,Yes,,,,,,,,,,,
+,requires primary key for incremental CDC,,,Yes,Yes,"NA 
+refer snaplogic fast data loader",No,,,,No,,Yes,Yes,-,Yes,,,,,,,,,,,
+Tables and Views both can be replicated,,,,only tables,No only tables,No,No,No,Yes,Yes,"No, only table",,Tables,Yes,No,Yes,,,yes,,,,yes,,yes,yes,
+Description,,,,vie can be replicated using custom sql refer link,vie can be replicated using custom sql ,Only tables use sql for views,,,,Only if source supports view selection,,,,,,Views can be migrated using full load task only,,,,,,,,,,,
+Allows Source Data filtering ,,,,Yes,Yes,Yes (Conditional snap),Yes,No,Yes,No,Yes,,Yes,Yes,Yes,Yes,,,yes,,,,yes,,yes,yes,yes
+Allow table joins at source,,,,No,Yes,Yes,No,No,Yes,Yes,Yes,,Yes,Yes,Yes,Yes,,,yes,,,,no,,no,yes,yes
+Allow source schema/table selection,,,,Yes,No,No,Yes,No,Yes,Yes,Yes,,Yes,Yes,Yes,Yes,,,yes,,,,yes,,yes,yes,yes
+Allow source column selection to transfer,,,,Yes,Yes,No,Yes,No,Yes,Yes,Yes,,Yes,Yes,Yes,Yes,,,yes,,,,yes,,yes,yes,yes
+Automatic Dedup for row level duplicate,,,,No,Yes deduplicate transformation,No,No,No,No,No,,,No,Yes,,Yes,,,,,,,,,no,no,no
+Automatic Schema and Table creation on Destination(Snowflake),,,,Yes,Yes,No,No,No,"Yes, only table",Yes,No,,Yes (Only table),Yes,No,,,,yes,,,,yes,,yes,yes,no
+Cloud Solution (SaaS Offering),,A cloud-based data integration platform is a form of data integration software delivered as a cloud computing service (SaaS).,,Yes ,Yes ,Yes,Yes,Yes,No,Yes,No,,Yes (Saas),Yes,Yes,Yes,,,yes,,,,yes,,yes,yes,yes
+,Does it has additional dependency,like Matillion requires EC2 to run & Streamsets require docker to be configured to support execution engine,,No,No,No,No,,,,,,Yes,Yes (Requires EC2 for compute and S3 for storing it doesn't store the data in its own cloud),"SAAS + on premise (Ubuntu, Debian, CentOS, RHEL and Amazon Linux)",,,,,,,,,,,,no
+Supports large-volume data processing,,"10 Million Records per day in less than an hour
+The term “large-volume performance” refers to the ability to process large volumes of data in a short period of time.",,,,,,Yes,Yes,Yes,Yes,,Yes,NA,Yes,Yes,,,yes,,,,yes,,yes,yes,yes
+,how long it takes to extract and load 10 Million records,,,,,,,,,,,,,,,,,,,,,,,,,,does all transformation in target dw.
+,Does it has any dependency to process large volume data,Example: Skyvia require File storage bucker (like S3) to process large volume data,,,,No,require temporary File storage bucker (like S3) to process large volume data,,,Process data in memory and copies into Snowflake for further processing,,,,,No,,,,,,,,,,,,no
+"is the complete ETL/ELT tool, supports all operations of extraction, transformation & load",,"for example FiveTran is only EL, whereas DBT core is only for transformation (and need another tool to do EL)
+Values to be entered: ETL, EL, TO (Transformation Only)",,ETL,ETL,ETL,EL,EL,ETL,ETL,ELT,,ETL,ETL,ETL,ETL,,,yes,,,,no,,yes,yes,no
+Description,,,,,,,,,,,,,,,Primarily used for AI,,,,,,,,,,,we can do various pre configured transformations,
+Transformation support,,"Values to be Complex/Medium/Simple/No
+Simple: basic OOB transformations (<10) available
+Medium: advance OOB transformations (> 10 and <20) available (like fuzzy match, lookup, merge, join) with simple drag & drop
+Complex: advance OOB transformations (>20) and ability to implement custom transformations (through sql or scripting language) (Example Hevo gives option for custom transformations)",,Medium,Complex,Simple,NA,No,Complex,Simple,Medium,,Medium,Medium,Advanced,Advanced,,,yes,,,,yes,,yes,yes,yes
+Custom transformation support,,ability to implement custom transformations (through sql or scripting language),,Yes,Yes,No,NA,No,No,,,,No,Yes,Yes,Yes,,,yes,,,,no,,yes,yes,yes
+,,,,Supported through Python v2.7 as well as SQL,Java language custom transformations,,,,,,,,,Provides SQL interface,Python Preprocessing,Using Python,,,,,,,,,,,
+Low code implementation,,"The term “low-code” refers to a software platform that builds ETL and data integration pipelines nearly automatically, requiring little or no input from developers. Low-code ETL platforms have a simple, drag-and-drop visual interface, allowing users to easily understand the flow of data throughout the enterprise.",,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,,Yes,Yes,Yes,Yes,,,yes,,,,yes,,yes,yes,no
+Real Time Data Streaming,,"This term refers to the ability to ingest data in real time and consume data from streaming platforms, such as Kafka, Twitter Streams and many others.",,Yes,Yes,Yes,No,No,Yes,Yes,Yes,,Yes,Yes,Yes,Yes,,,,,,,yes,,yes,yes,NA
+Real Time Data Streaming description,,,,Only Apache Kafka,Apache kafka,"Kafka 
+(Acknowledge. producer, consumer)",,,,,,,Apache Kafka,Kafka,Not enabled by default.Have to do it manually,"Kafka, Kinesis",,,,,,,,,streaming using Rivery CDC,,
+Pipeline - Pipeline monitoring,,"pipeline log history - failed/successful pipelines, failed reason, transfered rows, ",,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,,Yes,Yes,No,Yes,,,yes,,,,yes,,yes,yes,Yes
+Pipeline - Pipeline execution logs,,"data transfered details, failed/successful steps, filter by datetime",,Yes,Yes,yes,Yes,Yes,Yes,Yes,Yes,,Yes,Yes,Yes,Yes,,,yes,,,,yes,,yes,yes,Yes
+Pipeline - Pipeline built in-schedule,,,,,,Yes,Yes,Yes,Yes,Yes,Yes,,Yes,,No,Yes,,,yes,,,,yes,,yes,no,yes
+Pipeline/job orchestration,,parent child hierarchy (example trigger child pipeline from master pipeline for each iteration),,No,Yes,No,No,Yes,Yes,Yes,Yes,,Yes,,No,Yes,,,yes,,,,yes,,yes,no,yes
+Security - Data encryption (specially in transit),,SSH tunneling instead of directly exposing the DB to the internet,,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,,Yes,Yes,Yes,Yes,,,yes,,,,yes,,yes,yes,yes
+Security - Data encryption (Description),,,,"Hevo Pipelines use Kafka as a medium to move data across stages. 
+Communication within the Kafka nodes is always encrypted",Data in transit is encrypted using TLS-1.2 or greater protocol.,API and web services managed by SnapLogic use TLS 1.2. HTTPS is used for data transmission,"Skyvia can be accessed only via HTTPS. 
+
+All the users data is encrypted in transit using TLS end-to-end encryption and strong encryption keys with length of at least 128 bits",,encryption and decryption of sensitive data has to be done manually,,,,In transit it uses Secure Socket Layer / Transport Layer Security 1.2),"It doesn't store data, when at rest in the memory the data is encrypted",,AWS provides Secure Sockets Layer (SSL) encryption for data in motion. It also supports data encryption at rest,,,,,,,,,Security using TLS,"can encrypt files using AES, PGP, or RSA.",
+"Supports compliance, governance, 
+and security certifications",,,,,,,,"HIPAA, GDPR, SOC 2",HIPAA,"SOC 2,  SOC 3, ISO27001",None,,"HIPAA,SOC TYPE II (SOC 2 Type II report and HIPAA Business Associate available upon request)",No,Yes,Yes,,"HIPAA, GDPR, SOC 2",GDPR,None,,,GDPR,"CSA, ISO (multiple) , HIPAA BAA , HITRUST",yes,yes,yes
+,Supports HIPPA,,,Yes,Yes,Yes,Yes,,,No,No,,Yes,,No,Yes,,,,,,,,,"SOC2, Hipaa, GDPR","soc1,soc2,gdpr,Hipaa",
+,Supports SOC,,,Yes,Yes,Yes,No,,,Yes,No,,Yes,,No,No,,,,,,,,,,,
+SSL Support,,,,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,,Yes,Yes,Yes,Yes,,,yes,,,,,,,yes,yes
+Tool help is easily accessible in public/google,,"for example, Abnitio has minimal help available on internet",,Yes,Yes,Minimal References on google,Yes,Yes,Yes,Yes,Yes,,Yes,Moderate,Yes,Yes,,,yes,,,,no,,yes,no,yes
+Product Documentations are available and easily accessible ,,,,Yes,Yes,Yes,Yes,Yes,Documentation is comprehensive.,Yes,Yes,,Documentation is comprehensive. Blogs are also provided with demo videos. ,Yes,Yes,Yes,," 
+Documentation is comprehensive. ","Documentation
+ relies on articles accessible through the support portal. The 
+company doesn't provide training services, but tutorial videos 
+are available on the company's YouTube channel.",documentation only as there is no premium support option available,,,"Documentation
+ is available. Provides training services.",,yes,yes,Great documentation and free training videos.
+Customer Support available,,,,Through Chat and Call,"Yes, call",Through Email,Contact Form & Chat Support,Yes,Yes,"Yes,  through Qlik Customer Support",Yes,,"Customer Supports: Enterprise- Through tickets, email or call, fast resolution provided / Professional- Email,Ticketing, call",Premium: Support for first 14 days.Professional: 24X7 support + 1-hour response time (Technical expertise and architectural consulting),"Community Answers, Live chat, Editor Support","Support available. 1) General Support: Sales, Compliance Support. 2) Subscriber support services: Technical Support, Billing or account support, Login or access support",,"Provides support through an in-app form. 
+Documentation is comprehensive. Does not
+ provide training services.
+","Matillion provides support through an online ticketing system
+ accessible through a support portal or via email.",Mostly via community(via website and Slack),,,Support ticket portal.,Support through Incident ticket from Azure Support portal.,yes,yes,yes
+Support SLAs,,mention in hours,,12,,NA,No,,"Tier based Customer Support , “Gold”, “Platinum” or “Mission Critical”",Yes,No,,96-99 % uptime  depends on the service credit,No,Yes,Yes (Based on credit),,Available,No,Yes,,,Available,,yes,yes,Yes
+,,,,,"Multiple account : basic, premier, standard depends upon account refer link",,,,,"Based on Severity level 1,2,3 and 1 being the highest.",,,,,,,,,,,,,,,for enterprise version only,,with DBT cloud
+Open Source OR licensed,,only values: Licensed OR open-source OR open-source with limitations,,Licensed,Licensed,Licensed,Licensed refer link,Licensed,Open Source,Licensed,Licensed,,Open-source with limitations,Licensed,Licensed,Licensed,,,licensed,,,,licensed,,licensed,licensed,Licensed
+Open Source OR licensed - Description,,,,,,,,,,,,,Engine is free and open source however pipeline is charged,,,,,,,,,,Need to schedule call with HVR for getting a license,,,,
+Pricing,,"Should have:
+- 0 is open-source
+- per month dollar value (charge) for 10 M per day Data transfer & transformation
+- Please add ""Exact Value not availble"" if not feasible to get it.
+
+
+
+Pricing basis:
+fivetran - MAR (1 Million MAR, Enterprise edition)
+Matilion - size of ec2 (or software) + dollars per hour based on the size * number of hours etl pipeline is running 
+
+(xlarge ec2 + etl execution for 1, 2) -- Size, Medium
+
+number of distinct connectors -- 
+
+based on the data volumne in terms GB/TB
+
+Edition:
+3-4 standar/basic, Enterprise, Business Critical",,"2 types of billing :
+Yearly, Monthly
+
+Starter Account
+$249/month for 20M  Events (Millions) yearly Billing
+$299/month for 20M  Events (Millions) monthly Billing
+
+
+Free Connectors
+
+","30days free trial account with add on connectors with 14 / 30 days free trial license
+ The base version of Integration Cloud starts at $2,000 per month","Dev Env is free 
+
+Test Env is free
+
+Prod Env Is Priced
+
+
+","
+Standard
+
+
+
+
+$239/mo. 10 M
+Records per month
+
+Scheduling
+once an hour
+
+Scheduled Integrations
+50
+
+Integration Scenarios
+Basic
+
+Mapping Features
+Advanced
+
+
+
+
+
+
+Pricing link","$180 per month for 10 mil rows, 
+2 months free with annual plan ","Free, Optional upgrade to get access to Talend Data Fabric, through which the cloud and on-prem versions can integrate data together.",Licensed,5000$ for 1user/year.,,"Free version: Data Collector Engine, Transformer Engine, Control Hub,Active Jobs = 2, Users = 2, Published Pipelines = 10 . term : not defined                                                                   Professional Version: Free version with Active Jobs = 5, Users = 5, Published Pipelines = 50, SLA = 99.99% uptime PRICE : 1000$ /month.                                            Enterprise Version: Active Jobs = unlimited, Users = unlimited, Published Pipelines = unlimited, PRICING provided on contact.",Community Version is free forever. Professional Version is paid price is available after contacting. https://www.upsolver.com/pricing,Online starts at $499 per month (15 day free trial for online). Installed pricing is provided on contact (free version for forever with limitation).,"Pricing Link, Price Calculator Link: https://aws.amazon.com/glue/pricing/",,"14-day free trial. 
+Based on monthly active rows (MAR) ","Offers a 14-day free trial. Pricing depends on the platform on
+ which the customer's data warehouse runs.Charges are hourly
+ at a rate per user that depends on the instance size customers run.
+ Annual billing plans are available.
+Charge based on EC2 + Matillion license cost.","Open source, free to use",,,Depends on the number of connectors,"No cost for setup , pricing for Data Pipeline is calculated based on:
+
+1)Pipeline orchestration and execution
+2)Data flow execution and debugging
+3)Number of Data Factory operations such as create pipelines and pipeline monitoring . Below charges are for East US region and may differ for other regions.
+Orchestration - 1$ / 1000 runs
+Data movement Activity - $0.25/DIU-hour
+Pipeline Activity - $0.005/hour
+External Pipeline Activity - $0.00025/hour",,https://www.striim.com/pricing/,DBT cloud has a free version which is for one person only. DBT developer edition has a maximum of 40 developer seat and 50 read only seats and the charge is $50 per month per developer seat. DBT enterprise cost to be discussed with the DBT sales team.
+Version Control (versioning),,,,Supported for Internal pipeline transformations,Yes,Yes(Github) ,No,No,Yes,No,Yes,,Yes,Yes,Yes,,,No,Yes,,,,No,"Yes , if configured with Github / Azure Devops Repository",yes,no,Yes
+,,,,,Github no license required,,,,,,,,,,,,,,,,,,,,,,
+"Supports data 
+warehouses destinations like Snowflake",,,,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,,Yes,Yes,Yes,Yes,,Yes / Yes,Yes ,Yes / Yes,,,Yes ,Yes,yes,yes,YES.
+"Supports data 
+warehouses destinations like Redshift, Synapse, BigQuery",,"Values:
+R for Redshift
+S for Synapse
+B for BigQuery",,RB,RSB,RB,RSB,Yes,Yes,"Yes, as target endpoint",Yes,,RSB,R,RSB,RB,,,,,,,Yes ,,yes,yes,YES.
+Limitations,,It can be subjective,,"Hevo replicates a maximum of 4096 columns to each Snowflake table, of which six are Hevo-reserved metadata columns used during data replication. 
+Therefore, your Pipeline can replicate up to 4090 (4096-6) columns for each table. Read Limits on the Number of Columns.   
+For any Transformation that is applied on an Event, a maximum of 10,000 child Events can be generated..",refer link to get limitations of iics for incremental load,,,Lacks the ability to transform data before loading.,There is a bit of learning curve when considering medium and high level of transformation,"The Transactional apply Change Processing mode is not supported.
+ Replication of tables with backslashes in their names (e.g. SPECIAL\\TABLE\N)is not supported.
+",,,Requires Tarball or Docker for deployment on the local machine in order to run the engine. 1) Different Engine should run for DATA TRANSFORMATION AND DATA COLLECTOR PIPELINES,,,AWS Glue cannot support the conventional relational database systems. It can only support structured databases. Also some of the connectors are paid in the market place ,,,,,,,very basic transformations allowed,,,can't create custom sources,Can't do extract and load
+Added Advantage,,It can be subjective,,"Novel use case - Data sync from warehouse to target (HubSpot, Salesforce) is supported",,,,,,,,,,Upsolver never store data it processes the data in the memory.,"A great advantage for ML and datascience (AI). Visualisation is also available (scatter plots, histogram, etc).Multi variate analysis for predicting on two different parameters.
+Also used for deep learning.",AWS Glue runs in a serverless environment.,,Also the engine for transformation and ingestion are seperately created,Great training videos.,,,,,,,,
+Reference Links,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,"Event :  Each record that is either updated or inserted in the database or data warehouse Destination is counted as one Event.  
+For example, in the case of a database Source, each row or document being inserted or updated in your database is replicated as one Event in the Destination.",,,,,,,,,,,,,,,,,,,,,,,

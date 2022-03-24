@@ -1,0 +1,11 @@
+Platform Features,Follow up Question,Description,Fivetran,Hevo,Informatica IICS,SnapLogic,Skyvia,Stitch,Talend,Qlik Replicate,Alteryx,Workato,StreamSets,Upsolver,Dataiku,AWS Glue,DOMO,Fivetran,Matillion ETL,Apache Airflow,Airbyte,Hevo Data,HVR,Azure Data Factory,Rivery,Striim,DBT
+Description,,,,,,,,,,,,,,,,,Supports TLS,,,,,,,,,,
+Tool help is easily accessible in public/google,,"for example, Abnitio has minimal help available on internet",Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,,Yes,No,Yes,Yes,Yes,,yes,,,,no,,yes,no,yes
+Product Documentations are available and easily accessible ,,,yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,,Yes,Yes,Yes,Yes,Yes,Yes,yes,yes,,,yes,,yes,yes,Yes
+Customer Support available,,,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,,yes,Yes,yes,yes,yes,yes,yes,Yes,,,yes,Yes,yes,yes,yes
+,,,,,,,,,,,,,"Customer Supports: Enterprise- Through tickets, email or call, fast resolution provided / Professional- Email,Ticketing, call",Premium: Support for first 14 days.Professional: 24X7 support + 1-hour response time (Technical expertise and architectural consulting),"Community Answers, Live chat, Editor Support","Support available. 1) General Support: Sales, Compliance Support. 2) Subscriber support services: Technical Support, Billing or account support, Login or access support",Customer have to raise a ticket for contacting them. Also community is also provided for all. It also has training facility either virtual or face-to-face,"Provides support through an in-app form. 
+Documentation is comprehensive. Does not
+ provide training services.","Matillion provides support through an online ticketing system
+ accessible through a support portal or via email.",Mostly via community(via website and Slack),,,Support ticket portal.,Support through Incident ticket from Azure Support portal.,,,
+Support SLAs,,mention in hours,1,12,yes,,No,,yes,Yes,No,,yes,No,Yes,Yes ,,yes,No,Yes,,,yes,,yes,yes,Yes
+,,,,,"Multiple account : basic, premier, standard depends upon account refer link",,,,"Tier based Customer Support , “Gold”, “Platinum” or “Mission Critical”","Based on Severity level 1,2,3 and 1 being the highest.",,,96-99 % uptime  depends on the service credit,,,,,,,,,,,,for enterprise version only,,with DBT cloud

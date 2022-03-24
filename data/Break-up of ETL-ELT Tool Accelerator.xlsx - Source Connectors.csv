@@ -1,0 +1,44 @@
+Platform Features,Follow up Question,Description,Fivetran,Hevo,Informatica IICS,SnapLogic,Skyvia,Stitch,Talend,Qlik Replicate,Alteryx,Workato,StreamSets,Upsolver,Dataiku,AWS Glue,DOMO,Fivetran,Matillion ETL,Apache Airflow,Airbyte,Hevo Data,HVR,Azure Data Factory,Rivery,Striim,DBT
+Version,,,,,,,,NA,8.0.1,NA,2021.3,,,,,,,,,,,,,,,,
+Support native Salesforce Source connector,,,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,,Yes,No,No,Yes,Yes,,yes,,,,yes,,yes,yes,No
+Support native Workday Source connector,,,Yes,no,Yes,No,No,Yes,Yes,No,No,,No,No,No,No,Yes,,no,,,,no,,no,no,No
+Support native Dynamo Source connector,,,Yes,Yes,Yes,No,No,Yes,Yes,No,No,,No,No,No,Yes,Yes,,yes,,,,no,,no,no,No
+Support native S3 Source connector,,,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,,Yes,Yes,Yes,yes,Yes,,yes,,,,,,yes,yes,No
+Support native Azure BLOB Source connector,,,Yes,no,Yes,No,No,No,Yes,No,No,,Yes,Yes,Yes,Yes,Yes,,yes,,,,yes,,yes,no,No
+Support native Dropbox Source connector,,,Yes,no,No,Yes,Yes,No,No,No,No,,No,No,No,No,Yes,,yes,,,,no,,no,no,No
+Support native Dynamics 365 Source connector,,,Yes,no,Yes,Yes,Yes,No,Yes,No,No,,No,No,No,No,No,,yes,,,,no,,no,no,No
+Support native FTP Source connector,,,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,,Yes,No,Yes,No,Yes (SFTP),,yes,,,,yes,,yes,no,No
+Support native Google Analytics Source connector,,,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,,No,No,No,No,Yes,,yes,,,,no,,yes,no,No
+Support native HubSpot Source connector,,,Yes,Yes,yes (Infometry HubSpot Connector - 3rd Party),Yes,Yes,Yes,No,No,No,,No,No,No,Yes,Yes,,yes,,,,no,,yes,no,No
+Support native Jira Source connector,,,Yes,yes (jira cloud),Yes,Yes,Yes,Yes,No,No,No,,No,No,No,Yes,Yes,,yes,,,,no,,yes,no,No
+Support native Zendesk Source connector,,,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,,No,No,No,No,Yes,,yes,,,,no,,yes,no,No
+Support native Redshift Source connector,,,Yes,Yes,Yes,Yes,Yes,No,Yes,No,Yes,,Yes,Yes,Yes,Yes,Yes,,yes,,,,yes,,yes,no,Yes
+Support native Magento Source connector,,,Yes,Yes(magento via mysql),No,Yes,Yes,Yes,No,No,No,,No,No,No,No,No,,yes,,,,no,,no,no,No
+Support native Heap Source connector,,,Yes,no,No,No,No,Yes,No,No,No,,No,No,No,No,No,,no,,,,no,,no,no,No
+Support native Marketo Source connector,,,Yes,yes,Yes,Yes,Yes,Yes,No,No,Yes,,No,No,No,No,Yes,,yes,,,,no,,yes,no,No
+Support native RDS Database Source connector,,,Yes,yes,Yes,No,No,Yes,Yes,Yes,No,,No,No,No,Yes,No,,no,,,,no,,no,yes,No
+Support native SAP Source connector,,,Yes,no,Yes,No,No,No,No,Yes,"Yes, HANA",,Yes,No,Yes,Yes,Yes,,yes,,,,no,,yes,no,No
+Support native Kafka Source connector,,,Yes,yes,Yes,No,No,No,No,No,No,,Yes,Yes,Yes (Kafka cluster is required),Yes,Yes,,no,,,,yes,,no,yes,No
+Support native Kinesis Source connector,,,Yes,no,Yes,No,No,No,No,,No,,Yes,Yes,No,Yes,Yes,,no,,,,no,,no,no,No
+Support native Rest API connector,,,No,yes,Yes,Yes,No,Yes,,,Yes,,Yes,No,Yes,No,Yes,,yes,,,,no,,yes,no,No
+"API Integration OR Custom Connectors (Ability to connect 
+to a new source which is not available OOB)",,The ability to access third-party APIs using general purpose HTTP connector.,,Yes,Yes,Yes,Yes,,No,Yes,Yes,,Yes,No,Yes,Yes,Yes,,yes,,,,no,,yes,no,Yes
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,"Event :  Each record that is either updated or inserted in the database or data warehouse Destination is counted as one Event.  
+For example, in the case of a database Source, each row or document being inserted or updated in your database is replicated as one Event in the Destination.",,,,,,,,,,,,,,,,,,,,,,,

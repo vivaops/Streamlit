@@ -1,0 +1,9 @@
+Platform Features,Follow up Question,Description,Fivetran,Hevo,Informatica IICS,SnapLogic,Skyvia,Stitch,Talend,Qlik Replicate,Alteryx,Workato,StreamSets,Upsolver,Dataiku,AWS Glue,DOMO,Fivetran,Matillion ETL,Apache Airflow,Airbyte,Hevo Data,HVR,Azure Data Factory,Rivery,Striim,DBT
+"Supports data 
+warehouses destinations like Snowflake",,,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,,Yes,Yes,Yes,Yes,,Yes ,Yes ,Yes ,,,Yes ,Yes,yes,yes,YES.
+"Supports data 
+warehouses destinations like Redshift",,,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,,Yes,Yes,Yes,Yes,,,,,,,Yes ,,yes,yes,YES.
+"Supports data 
+warehouses destinations like Synapse",,,Yes,No,Yes,No,Yes,Yes,Yes,Yes,Yes,,Yes,No,Yes,No,,,,,,,Yes ,,Yes,Yes,Yes.
+"Supports data 
+warehouses destinations like BigQuery",,,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,,Yes,No,Yes,Yes,,,,,,,No,,Yes,Yes,Yes.

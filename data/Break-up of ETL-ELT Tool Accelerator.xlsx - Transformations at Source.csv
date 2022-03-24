@@ -1,0 +1,6 @@
+Platform Features,Follow up Question,Description,Fivetran,Hevo,Informatica IICS,SnapLogic,Skyvia,Stitch,Talend,Qlik Replicate,Alteryx,Workato,StreamSets,Upsolver,Dataiku,AWS Glue,DOMO,Fivetran,Matillion ETL,Apache Airflow,Airbyte,Hevo Data,HVR,Azure Data Factory,Rivery,Striim,DBT
+Description,,,,vie can be replicated using custom sql refer link,vie can be replicated using custom sql ,Only tables use sql for views,,,,Only if source supports view selection,,,,,,Views can be migrated using full load task only,,,,,,,,,,,
+Allows Source Data filtering ,,,,Yes,Yes,Yes ,Yes,No,Yes,No,Yes,,Yes,Yes,Yes,Yes,Yes,,yes,,,,yes,,yes,yes,yes
+Allow table joins at source,,,No,No,Yes,Yes,No,No,Yes,Yes,Yes,,Yes,Yes,Yes,Yes,Yes,,yes,,,,no,,no,yes,yes
+Allow source schema/table selection,,,,Yes,No,No,Yes,No,Yes,Yes,Yes,,Yes,Yes,Yes,Yes,No,,yes,,,,yes,,yes,yes,yes
+Allow source column selection to transfer,,,,Yes,Yes,No,Yes,No,Yes,Yes,Yes,,Yes,Yes,Yes,Yes,Yes,,yes,,,,yes,,yes,yes,yes
