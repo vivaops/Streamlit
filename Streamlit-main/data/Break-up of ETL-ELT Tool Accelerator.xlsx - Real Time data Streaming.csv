@@ -1,0 +1,22 @@
+Platform Features,Follow up Question,Description,Fivetran,Hevo,Informatica IICS,SnapLogic,Skyvia,Stitch,Talend,Qlik Replicate,Alteryx,Workato,StreamSets,Upsolver,Dataiku,AWS Glue,DOMO,Fivetran,Matillion ETL,Apache Airflow,Airbyte,Hevo Data,HVR,Azure Data Factory,Rivery,Striim,DBT
+Real Time Data Streaming,,"This term refers to the ability to ingest data in real time and consume data from streaming platforms, such as Kafka, Twitter Streams and many others.",Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,,Yes,Yes,Yes,Yes,Yes,,,,,,yes,,yes,yes,
+Real Time Data Streaming description,,,,Only Apache Kafka,Apache kafka,"Kafka 
+(Acknowledge. producer, consumer)",,,,,,,Apache Kafka,Kafka,Not enabled by default.Have to do it manually,"Kafka, Kinesis","Kafka,Kinesis",,,,,,,,streaming using Rivery CDC,,
+Pipeline - Pipeline monitoring,,"pipeline log history - failed/successful pipelines, failed reason, transfered rows, ",,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,,Yes,Yes,No,Yes,,,yes,,,,yes,,yes,yes,Yes
+Pipeline - Pipeline execution logs,,"data transfered details, failed/successful steps, filter by datetime",Yes,Yes,Yes,yes,Yes,Yes,Yes,Yes,Yes,,Yes,Yes,Yes,Yes,,,yes,,,,yes,,yes,yes,Yes
+Pipeline - Pipeline built in-schedule,,,Yes,,,Yes,Yes,Yes,Yes,Yes,Yes,,Yes,,No,Yes,,,yes,,,,yes,,yes,no,yes
+Pipeline/job orchestration,,parent child hierarchy (example trigger child pipeline from master pipeline for each iteration),No,No,Yes,No,No,Yes,Yes,Yes,Yes,,Yes,,No,Yes,,,yes,,,,yes,,yes,no,yes
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Description,,,,api link,create custom api in API Manager,openAPI snap ,No,"Using import api for stitch with clients provided by stitch in Java, python and Clojure",,Qlik Enterprise Manager is needed for Rest APIs to work as it provides with authentication,,,Via http client,,"Python Api, HTTP rest API",Developers can write custom Scala or Python code and import custom libraries and Jar files into Glue ETL jobs to access data sources not natively supported by AWS Glue.,"Can be build with javascripts, Two types of custom connector namely standard and writeback connetor ",,,,,,,,,,New adapters can be built using python connectors
+,has dependency on cloud service to trigger custom connector,,,,,,,,,,,,,,,,Only for Writeback connector,,,,,,,,,,
+Supports Variables/Parameters - dynamic pipelines,,Example: ETL tools like Rivery/Matillion provides parameter driven pipelines,"Yes
+",No,Yes,Yes,Yes,No,Yes,Yes,,,Yes,No,Yes,Yes,Yes,,yes,,,,,,,no,Yes
+OOB packages/kits (ready pipelines for common sources),,Refer Kit concept in Rivery,No,No,Yes,Yes,No,Yes,Yes,,Yes,,Yes,No,No,No,No,,no,,,,no,,yes,yes,no
+,,,,,,"S3 to SnowFlake,  
+Mysql to snowflake.
+ oracleDb to Snowflake",,,,,,,Has sample data pipelines,,,,,,,,,,,,,,
+Support full load,,,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,,Yes,No,Yes,Yes,Yes,,yes,,,,yes,,yes,yes,no
+Native support for incremental load (delta load/CDC support),,"The ability to read new database transactions from source database logs, capture changes without making application-level changes or scan transactional tables.",,,,No,Yes,,Yes,Yes,Yes,,Yes,Yes,No,Yes,Yes,,no,,,,yes,,yes,yes,no
+,requires CDC configuration at source,,Yes,Yes,Yes,,Yes,,,,Yes,,Yes,Yes,-,Yes,,,,,,,,,,,
+,requires primary key for incremental CDC,,Yes,Yes,Yes,,No,,,,No,,Yes,Yes,-,Yes,,,,,,,,,,,
