@@ -41,20 +41,20 @@ def run_query(query):
     return rows
 
 # Query first sheet
-sheet1_url = st.secrets["sheet"]
+sheet1_url = st.secrets["source_connectors"]
 rows = run_query(f'SELECT * FROM "{sheet1_url}"')
 
 st.subheader('Sheet 1:')
 # Print results.
 for row in rows:
-    st.write(f"{row.Description} ")
+    st.write(f"{row.PlatformFeatures} ")
 
 # Query second sheet
-sheet2_url = st.secrets["public_gsheets_url"]
+sheet2_url = st.secrets["Transformation_at_source"]
 rows = run_query(f'SELECT * FROM "{sheet2_url}"')
 print(rows)
 
 st.subheader('Sheet 2:')
 # Print results.
-# for row in rows:
-#     st.write(f"{row.PlatformFeatures}")
+for row in rows:
+    st.write(f"{row.PlatformFeatures}")
